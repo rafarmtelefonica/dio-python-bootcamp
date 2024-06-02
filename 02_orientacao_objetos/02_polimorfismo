@@ -1,0 +1,22 @@
+class Passaro:
+    def __init__(self) -> None:
+        pass
+    
+    def voar(self):
+        print("Em geral os passaros voam.")
+
+class Galinha:
+    def __init__(self) -> None:
+        pass
+    
+    def voar(self):
+        print("Galinhas voam pouco!")
+
+def realizar_voo(passaro):
+    passaro.voar()
+
+passaro_generico = Passaro()
+galinha = Galinha()
+
+realizar_voo(passaro_generico)
+realizar_voo(galinha)
